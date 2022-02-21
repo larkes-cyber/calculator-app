@@ -31,15 +31,6 @@ class MainActivity : AppCompatActivity() {
         val elem:TextView=findViewById(R.id.tvInput);
         val content=elem.text.toString();
         val array= mutableListOf<String>("+","-","*","/");
-//        var someNum="";
-//        content.forEachIndexed { i, item ->
-//            if(item.toString() in array){
-//
-//            }
-//            else{
-//                someNum+=item.toString();
-//            }
-//        }
        val forSecondNum=content;
         var i =0;
         for(i in 0..content.length){
@@ -75,8 +66,6 @@ class MainActivity : AppCompatActivity() {
         this.checkRepid((view as Button).text.toString());
     }
     fun onResult(view: View){
-
-       // Toast.makeText(this,"1",Toast.LENGTH_SHORT);
         val elem:TextView=findViewById(R.id.tvInput);
         val content=elem.text.toString();
         for(n in content){
